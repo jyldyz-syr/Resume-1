@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+
+/* Header */
+
+.header {
+    background: url("../img/Без названия.jpg");
+    background-size: cover;
+    padding-bottom: 300px;
+    color: #fff;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff !important;
+}
+
+.nav-item a {
+    color: #fff !important;
+}
+
+h1 {
+    font-size: 70px;
+    ;
+    color: #FFF;
+}
+
+.header__desc p {
+    color: #fff;
+    font-size: 30px;
+}
+
+.header__desc {
+    position: relative;
+}
+
+.header__desc p::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.navbar span {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header__desc {
+    margin-top: 120px;
+}
+
+/* end Header */
+
+
+
+/* about */
+
+.about__left {
+    background-color: #f7f7f7;
+    border: 1px solid #f5f5f5;
+    width: 370px;
+    padding: 20px 0 0 30px;
+    margin-bottom: 20px;
+
+
+}
+
+.about__center {
+    background-color: #f1f1f1;
+    border: 1px solid #f5f5f5;
+    width: 370px;
+    padding: 20px 0 0 30px;
+    margin-bottom: 20px;
+
+}
+
+.about__right {
+    background-color: #f7f7f7;
+    border: 1px solid #f5f5f5;
+    width: 370px;
+    padding: 20px 0 0 30px;
+    margin-bottom: 20px;
+}
+
+.info__item span {
+    font-weight: bold;
+}
+
+.info li {
+    margin: 10px 0;
+}
+
+.image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image:hover {
+    opacity: 0.5;
+}
+
+
+/* end about */
+
+
+
+/* skills */
+
+.skills {
+    color: #000;
+    background-color: #f3f3f3;
+}
+
+/* end skills */
+
+
+
+/* Interests */
+
+.interests__inner p {
+    font-size: 20px;
+}
+
+/* end Interests */
+
+
+/* footer */
+.order-form__form>input,
+.order-form__form button {
+    width: 65%;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.order-form__form>input {
+    border: none;
+    border-bottom: 1px solid #797676;
+    background: transparent;
+}
+
+.order-form input:nth-child(4) {
+    padding-bottom: 100px;
+}
+
+.footer__blocks p:first-child {
+    font-size: 35px;
+}
+
+/* end footer */
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 450px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+@media all and (max-width: 990px) {
+
+    .about__inner {
+        display: flex !important;
+        justify-content: center !important;
+
+    }
+
+    .about__left {
+        width: 500px;
+    }
+
+    .about__center {
+        width: 500px;
+    }
+
+    .about__right {
+
+        width: 500px;
+
+    }
+
+}
